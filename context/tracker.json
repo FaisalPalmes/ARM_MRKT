@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "updated": "2026-09-13",
+  "notes": "Structured status read by hub/build.js and feed/build-feed.js. Commercial section never crosses to the portal. An open item crosses to the portal's needsFromYou only when owner is arman AND it has a portal block; the portal block is the client-safe wording. Close an item by setting status to done and closed_on — do not delete it.",
+  "commercial": {
+    "staged_payments_confirmed": false,
+    "start_date": "2026-10-01",
+    "start_date_confirmed": false,
+    "contract_signed": false,
+    "note": "Proposal only as of 13 Sept 2026. Faisal chases."
+  },
+  "milestones": [
+    { "date": "2026-09-05", "title": "Photo and video shoot, day 1", "status": "done", "portal": true },
+    { "date": "2026-09-06", "title": "Photo and video shoot, day 2", "status": "done", "portal": true },
+    { "date": "2026-09-12", "title": "Photo and video shoot, day 3", "status": "done", "portal": true },
+    { "date": "2026-09-13", "title": "Photo and video shoot, day 4", "status": "done", "portal": true },
+    { "date": "2026-09-14", "title": "Editing week begins", "status": "planned", "portal": true },
+    { "date": "2026-09-21", "title": "Website goes live (week of)", "status": "planned", "portal": true, "note": "Website session's date. w/c 21 Sept." },
+    { "date": "2026-09-30", "title": "Meta adverts start", "status": "planned", "portal": false, "note": "'Late Sept' in the handover. No fixed date and blocked on Meta admin access. Does not cross until dated." },
+    { "date": "2026-10-01", "title": "Retainer starts", "status": "planned", "portal": false, "note": "Commercial. Never crosses. Unconfirmed by Arman." }
+  ],
+  "delivered": [],
+  "open_items": [
+    { "id": "shoot-status", "title": "What's in the can from the shoot — unknown. Ask Faisal, then ingest and index.", "owner": "faisal", "kind": "task", "status": "open", "since": "2026-09-13", "note": "First job. Budget an evening. Need: where the files live, edited or raw, naming, who is identifiable." },
+    { "id": "payments", "title": "Arman to confirm the staged payments and the 1 Oct start", "owner": "faisal", "kind": "commercial", "status": "open", "since": "2026-09-13", "note": "Faisal chases. Commercial — never crosses to the portal." },
+    { "id": "contract", "title": "Written contract — none exists, proposal only", "owner": "faisal", "kind": "commercial", "status": "open", "since": "2026-09-13", "note": "Parties, notice, ad spend on his card, IP on payment, photo/staff consent, GDPR Art. 28 for the list, liability cap, no guarantee of results." },
+    { "id": "coi", "title": "NeroPay conflict-of-interest check", "owner": "faisal", "kind": "task", "status": "open", "since": "2026-09-13", "note": "Arman is a NeroPay account Faisal owns." },
+    { "id": "access-meta", "title": "Meta Business Suite admin", "owner": "arman", "kind": "access", "blocks": "The entire £390 Meta ads line", "status": "open", "since": "2026-09-13", "note": "Status unknown as of 13 Sept.", "portal": { "title": "Give Faisal admin access to Meta Business Suite", "why": "Adverts on Facebook and Instagram cannot be set up or run without it.", "how": "Faisal will send the exact steps on WhatsApp." } },
+    { "id": "access-gbp", "title": "Google Business Profile manager access", "owner": "arman", "kind": "access", "blocks": "The Google Business Profile plan (2 hours of ready work)", "status": "open", "since": "2026-09-13", "note": "Plan in context/google-profile-plan.md once imported.", "portal": { "title": "Make Faisal a manager on the Google Business Profile", "why": "Unlocks photo, menu, opening-hours and post updates on the Google listing.", "how": "Faisal will send the exact steps on WhatsApp." } },
+    { "id": "access-brevo", "title": "Brevo account (Arman creates, invites Faisal)", "owner": "arman", "kind": "access", "blocks": "The entire £60 email line; the website sign-up form stays off", "status": "open", "since": "2026-09-13", "portal": { "title": "Create the Brevo account and invite Faisal", "why": "The weekly email cannot start without it, and the sign-up form on the website stays switched off until then.", "how": "Faisal will send the exact steps on WhatsApp." } },
+    { "id": "address", "title": "Street spelling and postcode unsettled (Princes/Princess, 4DF/4DN)", "owner": "arman", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Must be identical everywhere once settled. Nothing client-facing carries the address until then.", "portal": { "title": "Confirm the exact street spelling and postcode", "why": "It has to match on the website, Google, Instagram and every post.", "how": "Send the address exactly as it appears on the Companies House record or on the front-door signage." } },
+    { "id": "consent", "title": "Staff photo/video consent in writing", "owner": "arman", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Anyone identifiable in an asset needs recorded consent or the asset is unusable.", "portal": { "title": "Written photo and video consent from anyone who appears in the shoot", "why": "Nobody appears in a post or advert without it.", "how": "Faisal will bring a short consent form. Each person who appears signs one." } },
+    { "id": "sophie-camera", "title": "Sophie on camera — asked, unanswered", "owner": "other", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Her answer, routed through her." },
+    { "id": "outdoor", "title": "Outdoor seating unverified", "owner": "faisal", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Ask Arman. Never claim it until confirmed." },
+    { "id": "chef-on-site", "title": "Chef Yianni Pelekanos still on the live site", "owner": "website", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Website session's fix. Never name a chef here regardless." },
+    { "id": "zara", "title": "\"Zara Serobyan, WSET\" unverified and on the new build", "owner": "website", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Website session's fix. Never name her here." },
+    { "id": "mobile", "title": "Website never tested on mobile", "owner": "website", "kind": "fact", "status": "open", "since": "2026-09-13", "note": "Not this repo's job, but it blocks the ads landing page." }
+  ]
+}

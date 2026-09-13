@@ -1,0 +1,16 @@
+# secrets — never committed
+.env
+.env.*
+!.env.example
+
+# generated — rebuilt from the data, never hand-edited
+hub/dist/
+feed/dist/
+
+# shoot binaries — the index is the record, the files live in Faisal's synced folder
+assets/files/*
+!assets/files/.gitkeep
+
+node_modules/
+.vercel/
+.DS_Store

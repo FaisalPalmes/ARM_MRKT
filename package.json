@@ -1,0 +1,13 @@
+{
+  "name": "armenian-marketing",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Armenian Taverna — marketing and content operation. Internal.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "hub": "node hub/build.js",
+    "feed": "node feed/build-feed.js",
+    "weekly": "bash scripts/weekly.sh",
+    "check": "node --check lib/data.js && node --check hub/build.js && node --check feed/build-feed.js && bash -n feed/publish.sh scripts/new-post.sh scripts/new-email.sh scripts/weekly.sh"
+  }
+}
