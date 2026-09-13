@@ -8,14 +8,14 @@ One file per piece. `posts/` for Instagram and Facebook, `ads/` for Meta ads, `e
 ---
 date: 2026-09-25              # publish / start / send date
 channel: instagram            # instagram | facebook | meta-ads | email
-pillar: grill                 # key from context/pillars.md
+pillar: fire                  # fire | table | 58-years | cellar | calendar | room
 title: Khorovats launch       # internal title; also what the portal shows
 blurb: First look at the charcoal grill.   # ONE client-safe line. The only body text that ever crosses to the portal.
 asset: A0001                  # id from assets/index.json, or "NEEDED — <description>"
 status: draft                 # draft | awaiting-approval | approved | rejected | scheduled | published
 approved_by:                  # Faisal — set when approved
 approved_on:                  # YYYY-MM-DD
-why: Establish the grill as the signature before ads start.   # one sentence. No why, no post.
+why: Establish the grill as the signature before ads start.   # 24 Apr is commemorative only; no Early Bird 15 Nov – 1 Jan   # one sentence. No why, no post.
 rejection_reason:             # one line, when rejected — so the producer learns
 ---
 ```

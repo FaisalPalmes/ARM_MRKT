@@ -3,7 +3,7 @@
 `index.json` is the record of every photo and video the operation can use. **Nothing is referenced in a post, ad, email or the website unless it has an entry here.** After four shoot days there will be hundreds of files; a content engine that can't answer "which image goes with this post" stalls in week one.
 
 ## Where the files are
-The binaries are **not committed**. `assets/files/` is gitignored — put a working copy there if you want to look at them locally. The originals live in Faisal's synced folder (location: to confirm at ingest). The index refers to files by filename only, so the filename must be unique and never change once indexed.
+The binaries are **not committed**. `assets/files/` is gitignored — put a working copy there if you want to look at them locally. The originals live in the shared asset store (Drive or local); its path goes in `.env` as `ASSET_STORE_PATH`, never in a committed file. The index refers to files by filename only, so the filename must be unique and never change once indexed.
 
 Naming: `YYYY-MM-DD_subject_detail_NN.ext` — shoot day, what it is, a distinguishing detail, a two-digit counter. Example: `2026-09-05_grill_skewers_low_01.jpg`.
 
@@ -31,7 +31,7 @@ Naming: `YYYY-MM-DD_subject_detail_NN.ext` — shoot day, what it is, a distingu
   "crops_available": ["21:9", "4:5", "1:1"],
   "banner_grade": true,
   "empty_quadrant": "bottom-left",
-  "tags": ["grill", "fire", "hero", "pillar:grill"],
+  "tags": ["grill", "fire", "hero", "pillar:fire"],
   "used": [
     {"where": "website/home/hero", "date": "2026-09-21"},
     {"where": "ig/post", "date": "2026-09-25", "content": "content/posts/2026-09-25-khorovats-launch.md"}
@@ -47,7 +47,7 @@ Field notes:
 - `people`: `none` | `hands only, no faces` | `staff — <names>` | `guests — <count>, faces visible` | …
 - `consent`: `n/a` | `recorded — …` | `MISSING`.
 - `orientation`: `landscape` | `portrait` | `square`.
-- `banner_grade`: true if it survives a 21:9 crop with room for text.
+- `banner_grade`: true if it survives a 21:9 crop with room for text. `banner_grade` and `empty_quadrant` come from the shot list (`context/shot-list.md`); they tell the producer which frames can carry text.
 - `empty_quadrant`: where text can sit, or `none`.
-- `tags`: free, but always include one `pillar:<key>` from `context/pillars.md`.
+- `tags`: free, but always include one `pillar:<key>` from `context/pillars.md` (`fire` `table` `58-years` `cellar` `calendar` `room`).
 - `used[]`: **append, never overwrite.** It is how the engine avoids running the same hero twice in a month.

@@ -2,7 +2,7 @@
 
 Internal working repo for the Armenian Taverna marketing operation (studioPalmes). One client, one job. Private.
 
-Start with `CLAUDE.md`, then `context/business.md` and `context/voice.md`. The full brief is `context/handover.md`.
+Start with `HANDOVER-armenian-marketing.md` (the full brief), then `CLAUDE.md`, then `context/business.md` and `context/voice.md`.
 
 ## What lives where
 | Path | What | Who writes it |
@@ -10,7 +10,7 @@ Start with `CLAUDE.md`, then `context/business.md` and `context/voice.md`. The f
 | `context/` | Facts, voice, pillars, decisions log, status tracker | Faisal + the session |
 | `calendar/YYYY-MM.md` | What goes out when — the source of truth for slots | producer |
 | `content/{posts,ads,email}/` | One file per piece; frontmatter carries status and approval | producer drafts, Faisal approves |
-| `assets/index.json` | Every usable photo and video. Binaries are not committed. | the session, at ingest |
+| `assets/index.json` | Every usable photo and video. Binaries are not committed; the store path is in `.env`. | the session, at ingest |
 | `performance/weekly/` | One JSON per week; null means unknown | intel |
 | `research/` | Seasonal dates, competitor scans, dated findings | intel |
 | `feed/` | Builds `content.json` for the owner portal; `PORTAL_FEED_CONTRACT.md` governs it | build script |

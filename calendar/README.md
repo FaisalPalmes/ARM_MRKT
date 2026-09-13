@@ -6,7 +6,7 @@ Each file opens with the month's pillar mix, then one table:
 
 | Date | Channel | Pillar | Title | Content | Notes |
 |---|---|---|---|---|---|
-| 2026-09-25 | instagram | grill | Khorovats launch | content/posts/2026-09-25-khorovats-launch.md | |
+| 2026-09-25 | instagram | fire | Khorovats launch | content/posts/2026-09-25-khorovats-launch.md | |
 
 - `Date`: `YYYY-MM-DD`. Rows without an ISO date are ignored by the build.
 - `Channel`: `instagram` | `facebook` | `meta-ads` | `email`.

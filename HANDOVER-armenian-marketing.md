@@ -74,7 +74,7 @@ You cannot see the other sessions and they cannot see you. Everything crosses as
 
 ## 3. REPO STRUCTURE
 
-Private repo. Suggested name: `armenian-marketing`.
+Private repo: `FaisalPalmes/ARM_MRKT`.
 
 ```
 armenian-marketing/
@@ -244,14 +244,41 @@ You produce the content for Armenian Taverna. Everything you write goes to a hum
 
 ### Pillars — `context/pillars.md`
 
+The six pillars were named in the August strategy. Keep those names — they're in the client plan.
+
 | Pillar | What it is | Rough share |
 |---|---|---|
-| **The grill** | Khorovats. Fire, skewers, coals, hands. The differentiator. | 25% |
-| **The dishes** | One dish, its story, its origin. Basturma, lavash, pasus dolma, khinkali. | 20% |
-| **1968 and the story** | Heritage. Three families. The diaspora menu. The room. | 15% |
-| **The bar and lounge** | Armenian brandy, Georgian wine, cocktails. The half of the brand nobody tells. | 15% |
-| **Offers** | Early Bird (the only place a price appears). Banquets. Seasonal menus. | 15% |
-| **Occasions** | Groups, birthdays, private hire, Christmas. | 10% |
+| **Fire** | Khorovats. Skewers, coals, hands. The differentiator. | 25% |
+| **Table** | One dish, its story, its origin. Basturma, lavash, pasus dolma, khinkali. Meze all at once. | 20% |
+| **58 Years** | Heritage. Three families. The diaspora menu. | 15% |
+| **Cellar** | Armenian brandy, Georgian wine, the bar and lounge. The half of the brand nobody tells. | 15% |
+| **Calendar** | Early Bird (the only place a price appears), banquets, seasonal menus, dated moments. | 15% |
+| **Room** | The space, occasions, groups, private hire. | 10% |
+
+**Positioning line from the strategy doc — with one correction:** *"Manchester's only Armenian table. 58 years of fire, meze and wine — two minutes from Albert Square."* The original read "one family's fire". That's the third-generation error in different clothes; three families have run it. Use the corrected line.
+
+### Dates that drive the calendar
+
+| Date | Treatment |
+|---|---|
+| **21 Sept** — Armenian Independence Day | Content moment every year |
+| **~7 Nov – 22 Dec** — Albert Square Christmas Market *(dates unconfirmed)* | Six weeks of peak footfall at the door |
+| **December** | Biggest revenue window. **December is sold in October** — UK festive bookings confirm Oct–Nov, and Meta CPMs rise 30–50% in November. Buy early. |
+| **6 Jan** — Armenian Christmas | Content moment |
+| **24 Apr** — Genocide Remembrance Day | **Commemorative only. Never commercial. No offers, no CTA, no ad spend anywhere near it.** |
+| **Mid-July** — Vardavar | Unique. No Manchester competitor can copy it. Content at minimum; event if Arman has appetite. |
+| **15 Nov – 1 Jan** | Early Bird unavailable — don't promote it |
+
+Full year in the roadmap: `context/roadmap.md` and the Google Doc it links to.
+
+### Known mess to clean up, from the August audit
+
+- **Three Instagram handles:** @armeniantaverna, @armenianrestaurantbar, @armenian_taverna. Consolidate to one before any paid push.
+- **Business name in four variants** across listings. Match the signage; make every surface identical.
+- **Duplicate Deliveroo listings.**
+- Not on OpenTable, SquareMeal, DesignMyNight, Time Out.
+- Meta charges a **2% UK location fee** on ad spend since 1 July 2026 — factor into the £200.
+- **£200/month cannot exit Meta's learning phase on booking conversions.** Frame ads as awareness plus demand capture (~30k impressions/month), and never promise Arman a booking count.
 
 ### Channels
 
@@ -431,9 +458,9 @@ Do not build a third agent, a CMS, a database, or a dashboard framework. Files a
 
 ---
 
-## 13. DOCS TO IMPORT FROM THE COWORK PROJECT
+## 13. CONTEXT DOCS — already in `context/`
 
-Faisal exports these from the Claude project "Armenian Bar and Restaurant" into `context/`:
+These were bundled into the repo with this handover. Read them before the first producer run.
 
 | Doc | Becomes |
 |---|---|
@@ -462,6 +489,9 @@ Do **not** import: anything Bruncho, studioPalmes growth plan, tax guide, the ma
 - Sophie on camera — asked, unanswered
 - Staff photo/video consent in writing
 - Mobile never tested on the website (not your job — but it blocks the ads landing)
+- A Cowork scheduled task "Arman Weekly Content Draft" (Mondays 7am) exists, **disabled** since 10 Aug. Do not re-enable it — this repo's weekly rhythm replaces it. Faisal should delete it.
+- Email platform cost is billed to Arman directly, outside the £60 — free while the list is small. Make sure this never becomes a surprise.
+- Arman keeps the full image and video library outright, no licence restriction. That's in the proposal.
 
 ---
 

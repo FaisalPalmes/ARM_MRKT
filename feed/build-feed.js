@@ -14,29 +14,29 @@ const fail = msg => { console.error(`feed: REFUSED — ${msg}`); process.exit(1)
 const isNum = v => typeof v === 'number' && Number.isFinite(v);
 const num = v => (isNum(v) ? v : null);
 
-// ---- stats: the six agreed, from the latest weekly file ----
+// ---- stats: the six agreed, from portal.* of the latest weekly file (performance/README.md) ----
 const STATS = [
-  { id: 'instagram_followers', label: 'Instagram followers', unit: 'followers', period: 'total', goodDirection: 'up' },
-  { id: 'reach_7d', label: 'People reached', unit: 'people', period: 'last 7 days', goodDirection: 'up' },
-  { id: 'newsletter_subscribers', label: 'Newsletter subscribers', unit: 'subscribers', period: 'total', goodDirection: 'up' },
+  { id: 'instagram_followers', label: 'Instagram followers', unit: '', period: 'now', goodDirection: 'up' },
+  { id: 'reach_7d', label: 'People reached', unit: '', period: '7d', goodDirection: 'up' },
+  { id: 'newsletter_subscribers', label: 'Newsletter subscribers', unit: '', period: 'now', goodDirection: 'up' },
   { id: 'email_open_rate', label: 'Email open rate', unit: '%', period: 'last send', goodDirection: 'up' },
-  { id: 'enquiries_from_ads', label: 'Enquiries from adverts', unit: 'enquiries', period: 'last 7 days', goodDirection: 'up' },
-  { id: 'cost_per_enquiry', label: 'Cost per enquiry', unit: '£', period: 'last 7 days', goodDirection: 'down' },
+  { id: 'enquiries_from_ads', label: 'Enquiries from adverts', unit: '', period: '7d', goodDirection: 'up' },
+  { id: 'cost_per_enquiry', label: 'Cost per enquiry', unit: '£', period: '7d', goodDirection: 'down' },
 ];
 const perf = D.loadPerformance();
 const latest = perf[perf.length - 1] || {};
 const prev = perf[perf.length - 2] || {};
 const stats = STATS.map(s => ({
   id: s.id, label: s.label,
-  value: num((latest.stats || {})[s.id]),
+  value: num((latest.portal || {})[s.id]),
   unit: s.unit, period: s.period, goodDirection: s.goodDirection,
-  previous: num((prev.stats || {})[s.id]),
+  previous: num((prev.portal || {})[s.id]),
 }));
 const isDemo = stats.some(s => s.value === null);
 
 // ---- schedule: approved items only ----
 const STATUS_MAP = { approved: 'planned', scheduled: 'scheduled', published: 'published' };
-const CHANNEL = { instagram: 'Instagram', facebook: 'Facebook', 'meta-ads': 'Meta adverts', email: 'Email' };
+const CHANNELS = new Set(['instagram', 'facebook', 'meta-ads', 'email']); // raw keys, as in the contract's example
 const content = D.loadContent();
 const schedule = [];
 for (const c of content) {
@@ -47,8 +47,8 @@ for (const c of content) {
   if (!c.approved_by || !D.ISO.test(c.approved_on || '')) fail(`${c.file} is ${c.status} but approved_by/approved_on are not both set`);
   if (!c.title) fail(`${c.file} has no title`);
   if (!c.blurb || /\r|\n/.test(c.blurb)) fail(`${c.file} needs a one-line blurb`);
-  if (!CHANNEL[c.channel]) fail(`${c.file} has unknown channel "${c.channel}"`);
-  schedule.push({ date: c.date, channel: CHANNEL[c.channel], title: c.title, blurb: c.blurb, status });
+  if (!CHANNELS.has(c.channel)) fail(`${c.file} has unknown channel "${c.channel}"`);
+  schedule.push({ date: c.date, channel: c.channel, title: c.title, blurb: c.blurb, status });
 }
 schedule.sort((a, b) => a.date.localeCompare(b.date));
 

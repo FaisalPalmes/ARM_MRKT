@@ -86,6 +86,7 @@ const week = within(today, D.addDays(today, 6));
 const fortnight = within(D.addDays(today, 7), D.addDays(today, 20));
 
 // ---- 3. Numbers ----
+// Schema in performance/README.md: portal.* crosses to Arman, internal.* never does.
 const STATS = [
   { id: 'instagram_followers', label: 'Instagram followers', unit: '', goodDirection: 'up' },
   { id: 'reach_7d', label: 'Reach, 7 days', unit: '', goodDirection: 'up' },
@@ -105,25 +106,26 @@ const movement = (v, p, good) => {
   return `<span class="${better ? 'up' : 'down'}">${d > 0 ? '▲' : '▼'} ${Math.abs(d).toLocaleString('en-GB')}</span>`;
 };
 const titleOf = f => (byFile.get(f) && byFile.get(f).title) || f || '—';
+const adTitle = slug => { const f = `content/ads/${slug}.md`; return byFile.get(f) && byFile.get(f).title ? byFile.get(f).title : (slug || '—'); };
 let numbers;
 if (!latest) {
   numbers = `<p class="empty">No weekly numbers recorded yet. The first file goes in <code>performance/weekly/</code> on the first Sunday run; until then every stat is null and the portal shows demo mode.</p>` +
     table(['Stat', 'Value', 'Previous', 'Change'], STATS.map(s => [esc(s.label), fmtVal(null), fmtVal(null), movement(null, null)]), '');
 } else {
-  const st = latest.stats || {}; const ps = (prev && prev.stats) || {};
-  const src = latest.sources || {};
+  const st = latest.portal || {}; const ps = (prev && prev.portal) || {};
+  const src = latest.source || {}; const I = latest.internal || {};
   numbers =
-    `<p class="muted">Week ${esc(latest.week)} (${esc(latest.from)} → ${esc(latest.to)}), recorded ${esc(latest.recorded || '?')}. Sources: ${esc(Object.entries(src).map(([k, v]) => `${k}: ${v || 'none'}`).join(' · '))}</p>` +
+    `<p class="muted">Week ${esc(latest.week)}, recorded ${esc(latest.recorded || '?')}${prev ? ` · previous ${esc(prev.week)}` : ''}. Sources: ${esc(Object.entries(src).map(([k, v]) => `${k}: ${v || 'none'}`).join(' · ') || 'none stated')}</p>` +
     h3('The six stats (these cross to the portal)') +
     table(['Stat', 'Value', 'Previous', 'Change'], STATS.map(s => [esc(s.label), `<span class="num">${fmtVal(st[s.id], s.unit)}</span>`, `<span class="num">${fmtVal(ps[s.id], s.unit)}</span>`, movement(st[s.id], ps[s.id], s.goodDirection)]), '') +
     h3('Posts (internal)') +
-    table(['Post', 'Channel', 'Reach', 'Likes', 'Saves', 'Comments', 'Shares'], ((latest.internal || {}).posts || []).map(p => [esc(titleOf(p.content)), esc(p.channel), fmtVal(p.reach), fmtVal(p.likes), fmtVal(p.saves), fmtVal(p.comments), fmtVal(p.shares)]), 'No post numbers this week.') +
+    table(['Post', 'Reach', 'Likes', 'Saves', 'Shares', 'Comments'], (I.posts || []).map(p => [esc(titleOf(p.content)), fmtVal(p.reach), fmtVal(p.likes), fmtVal(p.saves), fmtVal(p.shares), fmtVal(p.comments)]), 'No post numbers this week.') +
     h3('Ad creatives (internal)') +
-    table(['Creative', 'Variant', 'Days live', 'Spend', 'Results', 'Cost / result'], ((latest.internal || {}).creatives || []).map(c => [esc(titleOf(c.content)), esc(c.variant), fmtVal(c.days_live), fmtVal(c.spend, '£'), fmtVal(c.results), fmtVal(c.cost_per_result, '£')]), 'No ad numbers this week.') +
+    table(['Creative', 'Spend', 'Impressions', 'Clicks', 'Results', 'Cost / result'], (I.ads || []).map(a => [esc(adTitle(a.creative)), fmtVal(a.spend, '£'), fmtVal(a.impressions), fmtVal(a.clicks), fmtVal(a.results), fmtVal(a.cpr, '£')]), 'No ad numbers this week.') +
     h3('Email (internal)') +
-    (latest.internal && latest.internal.email
-      ? table(['Send', 'Sends', 'Opens', 'Open rate', 'Clicks', 'Click rate', 'Unsubscribes'], [[esc(titleOf(latest.internal.email.content)), fmtVal(latest.internal.email.sends), fmtVal(latest.internal.email.opens), fmtVal(latest.internal.email.open_rate, '%'), fmtVal(latest.internal.email.clicks), fmtVal(latest.internal.email.click_rate, '%'), fmtVal(latest.internal.email.unsubscribes)]], '')
-      : '<p class="empty">No email numbers this week.</p>') +
+    table(['Send', 'Sent', 'Opens', 'Clicks', 'Unsubscribes'], (I.email || []).map(e => [esc(titleOf(e.content)), fmtVal(e.sent), fmtVal(e.opens), fmtVal(e.clicks), fmtVal(e.unsubs)]), 'No email numbers this week.') +
+    h3('Google Business Profile (internal)') +
+    (I.gbp ? table(['Calls', 'Direction requests', 'Website clicks'], [[fmtVal(I.gbp.calls), fmtVal(I.gbp.directions), fmtVal(I.gbp.website_clicks)]], '') : '<p class="empty">No profile numbers this week.</p>') +
     (latest.notes ? `<p><strong>Notes:</strong> ${esc(latest.notes)}</p>` : '');
 }
 

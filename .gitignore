@@ -7,9 +7,16 @@
 hub/dist/
 feed/dist/
 
-# shoot binaries — the index is the record, the files live in Faisal's synced folder
+# raw media never goes in git — index it, don't commit it
 assets/files/*
 !assets/files/.gitkeep
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.mov
+*.heic
+*.log
 
 node_modules/
 .vercel/

@@ -1,71 +1,69 @@
 # Armenian Taverna — the business
 
-Source: `context/handover.md` §1–2 (Cowork marketing session, 13 Sept 2026). When a fact below is confirmed or corrected, change it here and log the change in `decisions.md`. This file is the only place a fact about the business should be looked up.
+*Source of truth for facts. If it isn't here or in the menu, don't claim it.*
 
-## Identity
-- **Armenian Taverna** — trading as Armenian Taverna Limited. Branded *Armenian · Bar · Restaurant · Lounge*.
-- **Address: UNCONFIRMED.** Believed to be 3–5 Princes Street, Manchester M2 4DF. Open questions: Princes vs Princess; 4DF vs 4DN. Once settled it must be identical everywhere (website, Google, Meta, email footer). Until then, do not put the address in anything client-facing.
-- Phone: 0161 834 9025
-- Web: armeniantaverna.co.uk
-- VAT: 184878154
-- **Since 1968.** 58 years in 2026.
-- Family-run. Arman and Arusyak are the **third family to run it** — the third *owners*. Never write "third generation"; it is false.
+## The restaurant
+
+**Armenian Taverna** — trading as Armenian Taverna Limited, branded *Armenian · Bar · Restaurant · Lounge*.
+3–5 Princes Street, Manchester M2 4DF. *Street spelling and postcode still to be confirmed — Princes vs Princess, 4DF vs 4DN. Must be identical everywhere once settled.*
+0161 834 9025 · armeniantaverna.co.uk · VAT 184878154.
+
+**Since 1968.** Family-run. Arman and Arusyak are the **third family to run it** — third owners, not third generation. Never write "third generation" or "one family's". 58 years in 2026. Founding month unknown — ask Arman.
+
+**Positioning:** Manchester's only Armenian table. 58 years of fire, meze and wine — two minutes from Albert Square.
 
 ## The food
-- **Charcoal grill (khorovats)** is the core and the differentiator.
-- **Meze** served all at once, not in courses.
-- **Lavash** from the tandoor.
-- Dolma, basturma, paklava.
-- Georgian, Ukrainian and Russian dishes are on the menu because that is where Armenians settled in the twentieth century. The menu is a map of the diaspora, not a confused menu. Say it that way.
-- Banquets for groups.
-- **Early Bird: two courses £21, Monday–Friday 12–5.** Not available 15 November – 1 January. This is the only place a price appears in promotional content.
-- Armenian and Georgian wine list. Armenian brandy. Cocktails. The bar and lounge is half the brand and the half nobody tells.
 
-## Google Business Profile
-4.5 stars from about 1,600 reviews, as recorded on 13 Sept 2026. The single most valuable marketing asset the business owns. Check the live count before quoting it; never round up.
+Charcoal grill (khorovats) is the core: lamb, ribeye, chicken, pork, whole sea bass, on the skewer. Meze served all at once rather than in courses. Lavash from the tandoor. Dolma, pasus dolma, basturma, Ararat pie, paklava. Georgian (khachapuri, khinkali), Ukrainian (borsch) and Russian (pelmeni, olivieh, selodka) dishes are on the menu because that's where Armenians settled — the menu is a map of the diaspora, not a confused menu.
+
+**Offers:** Early Bird two courses £21, Mon–Fri 12–5, not available bank holidays or 15 Nov–1 Jan. Banquets: Vegetarian £28.50, Armenian Meat £36.95, Armenian Special £45.00 (min 6). **Prices appear in promotional content only for Early Bird.**
+
+**Drink:** Armenian and Georgian wine list. Armenian brandy. Cocktails. Bar and lounge.
+
+Full menu with every price: `A4 FOOD MENU.pdf` in the Cowork project. Wine list PDF is a scan — prices not extractable.
+
+## Online presence
+
+**Google Business Profile:** ~4.5 stars, ~1,600 reviews. The most valuable marketing asset the business owns. Never quote a figure without checking the live listing that day.
+**TripAdvisor:** 4.3/5, 748 reviews, #144 of 2,824 (Aug 2026).
+**Quandoo:** 5.5/6, 117 reviews.
+**Press:** Manchester's Finest, Manchester Confidential ×2, Good Food Guide.
+**Instagram:** three handles exist — @armeniantaverna, @armenianrestaurantbar, @armenian_taverna. Consolidate before any paid push.
+**Booking:** NeroBooking widget `https://eu.neropay.app/nerobooking/widget/24883`.
 
 ## People
-| Who | Role | Notes |
-|---|---|---|
-| **Arman** | Owner | WhatsApp. Busy. Patient, but a run of software bugs earlier in the year strained trust. Deliver with proof, close loops fast, never over-promise a date. |
-| **Arusyak** | Co-owner, Arman's wife | |
-| **Sophie** | Front of house | Runs the current social posts. Route staff comms through her. Asked whether she'd appear on camera — answer pending. |
-| **Amir** | Chef | Kitchen-side contact. Never named in content (no chef is). |
-| **Arman's developer** | Handles the old site | May have portal repo access one day. Nothing internal ever lives in the portal repo. |
 
-## Facts that are easy to get wrong
-- Third *family*, not third generation.
-- Founded 1968. 58 years in 2026.
-- Chef Yianni Pelekanos has left. Never name a chef. (Still on the live site as of 13 Sept — the website session's fix.)
-- "Zara Serobyan, WSET" is unverified. Never name her.
-- Outdoor seating is unverified. Never claim it.
-- Street and postcode unconfirmed. See Identity above.
-- Armenian script: only from the checked list once Arman has proofed it. Never load-bearing.
+- **Arman** — owner. WhatsApp. Busy. Patient, but bugs earlier in the year strained trust. Deliver with proof, close loops fast, never over-promise a date.
+- **Arusyak** — co-owner.
+- **Sophie** — front of house, runs current social posts. Route staff comms through her. On-camera consent asked, pending.
+- **Amir** — chef. Kitchen contact.
+- **Arman's developer** — handles the old site. May get portal access one day.
 
 ## The deal
-- £1,600 one-off + **£490/month retainer** (£40 website, £390 Meta bundle, £60 managed email).
-- One-off staged: about £900 on photo/video approval, £550 on website approval, £150 on email setup and go-live.
-- **Retainer starts 1 October.** Billed at the start of the month.
-- **Ad budget £200/month, on Arman's card.** We never handle money.
-- **Status as of 13 Sept 2026:** Arman has **not confirmed** the staged payments or the 1 October start. No written contract — proposal only. Faisal chases these; the hub surfaces them until closed. Nothing commercial ever crosses to the portal.
+
+£1,600 one-off (website £550, photo £350, video £550, email setup £150) + £490/month (website £40, social + Meta ads £390, managed weekly email £60). Staged: ~£900 on photo/video approval, £550 on website approval, £150 on email setup. Retainer from 1 October, billed start of month. Ad spend separate, £200/month, Arman's card, Meta's 2% UK location fee applies. Email platform billed to Arman directly. Arman keeps the full image and video library outright.
+
+**As of 13 Sept: staged payments and 1 Oct start NOT confirmed by Arman. No written contract.**
+
+## Never claim
+- A named chef
+- "Zara Serobyan, WSET" or any wine curator
+- Outdoor seating
+- A specific Google rating or review count not verified that day
+- Third generation
+- A booking count from ads — £200/month cannot exit Meta's learning phase on conversions
 
 ## Timeline
 | Date | Event |
 |---|---|
-| 5, 6, 12, 13 Sept 2026 | Shoot — four days. What's in the can: **unknown, ask Faisal**. |
+| 5, 6, 12, 13 Sept 2026 | Shoot, four days. What's in the can: **unknown, ask Faisal**. |
 | w/c 14 Sept | Editing |
-| 21 Sept | Armenian Independence Day — a content moment every year |
-| w/c 21 Sept | Website live |
-| Late Sept | Meta ads live (no fixed date; depends on Meta admin access) |
-| **1 Oct** | Retainer starts |
+| 21 Sept | Armenian Independence Day |
+| w/c 21 Sept | Website live (website session's date) |
+| Late Sept | Meta ads live. No fixed date; blocked on Meta admin access. |
+| **1 Oct** | Retainer starts (unconfirmed by Arman) |
 | 15 Nov – 1 Jan | Early Bird not available |
 
-## Channels and accounts
-- **Instagram + Facebook** organic. Sophie currently posts. Plan: Faisal produces, Sophie or Faisal posts, always after approval. Never auto-posted.
-- **Meta ads.** Objective: enquiries and bookings, not reach. Landing: the NeroBooking widget (`https://eu.neropay.app/nerobooking/widget/24883`) or the Early Bird page. Two creatives live at all times, one always being tested. Alcohol content needs age targeting per Meta policy. Blocked until Faisal has Meta Business Suite admin.
-- **Email.** Brevo. One send per week. Arman owns the account and invites Faisal as a user. Double opt-in carrying the 10% welcome code. GDPR: consent wording, privacy policy on the site, unsubscribe on every send. Site capture is built but gated behind `EMAIL_CAPTURE_ENABLED` and off until the Brevo account exists.
-- **Google Business Profile.** Two hours of ready work in `context/google-profile-plan.md` (to import). Blocked until Faisal has manager access. GBP posts live 7 days, so weekly is the cadence.
-
-## Other sessions
-- **Owner portal** — Arman's dashboard at `arman-owner-portal.vercel.app`, repo `FaisalPalmes/ARMAN_OWNER_PORTAL`. It consumes `content.json` from this repo and nothing else. Contract: `feed/PORTAL_FEED_CONTRACT.md`.
+## The other two sessions
+- **Owner portal** — Arman's dashboard at `arman-owner-portal.vercel.app`, repo `FaisalPalmes/ARMAN_OWNER_PORTAL`. Consumes `content.json` from this repo and nothing else. Contract: `feed/PORTAL_FEED_CONTRACT.md`.
 - **Website build** — on a Vercel preview, live about w/c 21 Sept. Not this repo's concern. Never touch website code.
