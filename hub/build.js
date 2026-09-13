@@ -140,7 +140,7 @@ const byType = A.reduce((m, a) => { m[a.type || 'untyped'] = (m[a.type || 'untyp
 const assetRow = a => [code(a.id), esc(a.file), esc(a.type), esc(a.subject), esc((a.tags || []).join(', ')), esc(a.people), esc(a.consent)];
 const ASSET_HEAD = ['Id', 'File', 'Type', 'Subject', 'Tags', 'People', 'Consent'];
 const assetsHtml = !A.length
-  ? `<p class="empty">The index is empty. First job: ingest the shoot (5, 6, 12, 13 Sept) and index every usable file. Nothing can be planned against an unindexed asset.</p>`
+  ? `<p class="empty">The index is empty. Nothing can be planned against an unindexed asset. Index every usable file after each shoot session, not at the end.</p>`
   : `<p class="muted">${A.length} assets indexed · ${esc(Object.entries(byType).map(([k, v]) => `${v} ${k}`).join(' · '))} · index updated ${esc(index.updated || '?')}</p>` +
     h3('Recently added (14 days)', recent.length) + table(ASSET_HEAD, recent.map(assetRow), 'None.') +
     h3('Most used', mostUsed.length) + table(['Id', 'File', 'Uses', 'Last used'], mostUsed.map(a => [code(a.id), esc(a.file), String(a.used.length), esc(lastUse(a))]), 'Nothing used yet.') +

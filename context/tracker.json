@@ -11,34 +11,11 @@
   },
   "milestones": [
     {
-      "date": "2026-09-05",
-      "title": "Photo and video shoot, day 1",
-      "status": "done",
-      "portal": true
-    },
-    {
-      "date": "2026-09-06",
-      "title": "Photo and video shoot, day 2",
-      "status": "done",
-      "portal": true
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Photo and video shoot, day 3",
-      "status": "done",
-      "portal": true
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Photo and video shoot, day 4",
-      "status": "done",
-      "portal": true
-    },
-    {
       "date": "2026-09-14",
-      "title": "Editing week begins",
+      "title": "Photo and video shoot (week of)",
       "status": "planned",
-      "portal": true
+      "portal": true,
+      "note": "Originally 5, 6, 12, 13 Sept. Did not happen. Faisal shoots in short sessions on different days and times this week."
     },
     {
       "date": "2026-09-21",
@@ -66,12 +43,12 @@
   "open_items": [
     {
       "id": "shoot-status",
-      "title": "What's in the can from the shoot — unknown. Ask Faisal, then ingest and index.",
+      "title": "Shoot this week (w/c 14 Sept): short sessions on different days and times. No assets exist yet.",
       "owner": "faisal",
       "kind": "task",
       "status": "open",
       "since": "2026-09-13",
-      "note": "First job. Budget an evening. Need: where the files live, edited or raw, naming, who is identifiable."
+      "note": "The 5, 6, 12, 13 Sept shoot did not happen. Banner shots first (shot-list.md 1A), they gate the website. Staff consent in writing before the first session. Ingest and index after each session, not at the end."
     },
     {
       "id": "payments",

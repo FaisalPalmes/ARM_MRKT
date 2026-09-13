@@ -29,4 +29,4 @@
 - Spare batteries and the dual charger — flagged in `shot-list.md` as the one item with delivery risk. Not in this order. Confirm before the next shoot day.
 
 ## Notes
-- The new items were delivered 13 Sept, the last of the four shoot days. Anything shot on days 1–3 was without them. Reshoots and the ongoing weekly content use this full kit.
+- Delivered 13 Sept, before the shoot, which is now the week of 14 Sept. The whole shoot uses this kit.

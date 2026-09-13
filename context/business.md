@@ -56,10 +56,10 @@ Full menu with every price: `A4 FOOD MENU.pdf` in the Cowork project. Wine list 
 ## Timeline
 | Date | Event |
 |---|---|
-| 5, 6, 12, 13 Sept 2026 | Shoot, four days. What's in the can: **unknown, ask Faisal**. |
-| w/c 14 Sept | Editing |
+| 5, 6, 12, 13 Sept 2026 | Shoot was planned. **Did not happen.** |
+| w/c 14 Sept | **Shoot**, in short sessions on different days and times. Editing as it comes in. |
 | 21 Sept | Armenian Independence Day |
-| w/c 21 Sept | Website live (website session's date) |
+| w/c 21 Sept | Website live (website session's date; depends on the banner shots landing this week) |
 | Late Sept | Meta ads live. No fixed date; blocked on Meta admin access. |
 | **1 Oct** | Retainer starts (unconfirmed by Arman) |
 | 15 Nov – 1 Jan | Early Bird not available |

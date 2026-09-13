@@ -129,3 +129,8 @@ Newest at the bottom. Never edit an old entry; add a new one that supersedes it.
 - Portal `schedule[].channel` uses the raw channel key (`instagram`, `facebook`, `meta-ads`, `email`), matching the contract's example.
 - 24 April (Genocide Remembrance Day) is commemorative only: no offers, no CTA, no ad spend within a week of it. Early Bird is not promoted 15 Nov – 1 Jan.
 - The Cowork scheduled task "Arman Weekly Content Draft" stays disabled and should be deleted; this repo's weekly rhythm replaces it.
+
+## 2026-09-13 — the shoot did not happen
+- Faisal confirms the 5, 6, 12, 13 Sept shoot did not take place. It was delayed, not partly done. The tracker's shoot milestones were marked done on the strength of the handover's calendar; corrected to one planned milestone, week of 14 Sept, so nothing false crosses to the portal.
+- New plan: short sessions on different days and times through w/c 14 Sept, website pushed the week after. Arman is not in a rush.
+- Consequence for this repo: no assets exist. Content can still be briefed with `asset: NEEDED — <description>`; those briefs double as the shot list for the week.
