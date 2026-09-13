@@ -1,7 +1,7 @@
 # Armenian Taverna — shot list
 
 *Living document. Shoot days: Sat 5, Sun 6, Sat 12, Sun 13 September 2026.*
-*Kit: Sony A6700 · Sigma 18-50 f/2.8 · 16-50 kit · DJI gimbal · Osmo Nano · action cam*
+*Kit: Sony A6700 · Sigma 18-50 f/2.8 · 16-50 kit · DJI gimbal · Osmo Nano · action cam — full current list in `kit.md`*
 *Last updated 19 August 2026.*
 
 ---
