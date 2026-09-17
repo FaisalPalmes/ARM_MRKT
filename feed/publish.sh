@@ -8,6 +8,12 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# GUARD (17 Sept 2026): the portal at FaisalPalmes/ARMAN_OWNER_PORTAL reads a richer content.json
+# than the v1 contract this feed emits. Pushing this file would blank Arman's page. Remove this
+# block only once feed/build-feed.js emits the portal's real shape and the contract is updated.
+echo "publish: REFUSING. The feed's shape does not match the portal's content.json yet. See context/decisions.md, 17 Sept." >&2
+exit 1
+
 if [ -f .env ]; then set -a; . ./.env; set +a; fi
 : "${PORTAL_REPO_PATH:?set PORTAL_REPO_PATH in .env}"
 : "${PORTAL_FEED_PATH:?set PORTAL_FEED_PATH in .env}"
