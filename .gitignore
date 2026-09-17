@@ -21,3 +21,5 @@ assets/files/*
 node_modules/
 .vercel/
 .DS_Store
+__pycache__/
+*.pyc

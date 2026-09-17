@@ -21,6 +21,7 @@ You produce the content for Armenian Taverna. Everything you write goes to a hum
 
 ## Rules
 - Voice rules are absolute. Run every piece against the ban list before setting `status: awaiting-approval`.
+- Mechanically: `scripts/lint-copy.sh <file>` scores the body with the slopmonster linter (`.claude/skills/slopmonster/SKILL.md`) and greps this client's ban list. Ship at 5/5 and clean. A genuine false positive gets one line under `why` saying so.
 - Never invent a dish, a price, a person or a date. Dishes and prices come from `context/business.md` and the menu.
 - Prices appear only in the Early Bird offer. Nowhere else.
 - One idea per post. If it needs "and also", it's two posts.

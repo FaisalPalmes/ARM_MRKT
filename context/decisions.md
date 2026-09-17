@@ -134,3 +134,8 @@ Newest at the bottom. Never edit an old entry; add a new one that supersedes it.
 - Faisal confirms the 5, 6, 12, 13 Sept shoot did not take place. It was delayed, not partly done. The tracker's shoot milestones were marked done on the strength of the handover's calendar; corrected to one planned milestone, week of 14 Sept, so nothing false crosses to the portal.
 - New plan: short sessions on different days and times through w/c 14 Sept, website pushed the week after. Arman is not in a rush.
 - Consequence for this repo: no assets exist. Content can still be briefed with `asset: NEEDED — <description>`; those briefs double as the shot list for the week.
+
+## 2026-09-17 — slopmonster installed
+- Faisal asked for github.com/ItsssssJack/SlopMonster (MIT, Jack Roberts). Installed at `.claude/skills/slopmonster/` so it lives with the repo, not in a session's home folder. Images, the upstream CI workflow and its nested gitignore were left out; everything else is verbatim.
+- Its scorer is stdlib Python, no network. Its cleanse step needs a rival-family CLI (`codex`); without one it prints the prompt to paste into another model's chat rather than let the drafting model mark its own work. That is the intended behaviour and the situation in this environment.
+- `scripts/lint-copy.sh` wraps the scorer and adds this client's ban list and the never-name facts. The producer runs it before any piece reaches `awaiting-approval`.
